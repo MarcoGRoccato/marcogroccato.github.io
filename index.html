@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Pages Test</title>
+    <title>Password Protected</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -33,11 +33,34 @@
 </head>
 <body>
 
-    <div class="container">
-        <h1>🚀 It Works!</h1>
-        <p>This is my test page hosted on GitHub Pages.</p>
-        <p>If you can see this, you've done it correctly. Well done!</p>
+    <div class="container" id="main-content">
+        <h1>🔒 Protected Area</h1>
+        <p>This content is shown after the password check.</p>
     </div>
+
+    <script>
+      // This script runs as soon as the page loads
+      function checkPassword() {
+        // --- The password to unlock the page ---
+        const correctPassword = "test";
+
+        // --- Ask the user for the password ---
+        let password = prompt("Please enter the password to continue:", "");
+
+        // --- Check if the entered password is correct ---
+        if (password === correctPassword) {
+            // If correct, show a success pop-up message
+            alert("✅ Success! The password is correct.");
+        } else {
+            // If incorrect, show an "Access Denied" message on the page
+            const content = document.getElementById('main-content');
+            content.innerHTML = '<h1>❌ Access Denied</h1><p>Incorrect password. Please refresh to try again.</p>';
+        }
+      }
+
+      // Run the function
+      checkPassword();
+    </script>
 
 </body>
 </html>
