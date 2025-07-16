@@ -1,0 +1,43 @@
+---
+title: "Data Analysis Portfolio"
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+---
+
+## Welcome
+
+This website is a collection of my data analysis projects. Each report is a self-contained Quarto document.
+
+Select an analysis from the list below to view the full report.
+
+***
+
+## Project Directory
+
+Here you will find a collection of projects covering various topics and datasets.
+
+### 📊 Customer Segmentation Analysis
+
+A report identifying distinct customer groups based on purchasing behavior. This analysis uses clustering algorithms in Python.
+
+- **[View Full Analysis](./analyses/customer-report.html)**
+
+---
+
+### 📈 Stock Market Trends
+
+An exploration of historical stock data to identify patterns using time-series analysis in R.
+
+- **[View Full Analysis](./analyses/market-trends.html)**
+
+---
+
+### 🧪 Project C (Coming Soon)
+
+A placeholder for a future project I plan to add here.
+
+- **(Link will be added here)**
+
