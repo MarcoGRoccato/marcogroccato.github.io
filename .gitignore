@@ -1,0 +1,19 @@
+# .gitignore
+
+# 1. Ignore the entire 'data' folder
+# This is the most important rule for your private data.
+data/
+
+# 2. For extra safety, ignore these file extensions everywhere in the project.
+# This prevents from accidentally committing a data file outside the 'data' folder.
+*.csv
+*.xlsx
+*.xls
+
+# 3. Ignore common Quarto and R project files that don't need to be on GitHub.
+_freeze/
+_publish/
+.Rproj.user/
+.Rhistory
+.RData
+.Renviron
