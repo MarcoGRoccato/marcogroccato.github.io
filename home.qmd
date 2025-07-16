@@ -19,25 +19,14 @@ Select an analysis from the list below to view the full report.
 
 Here you will find a collection of projects covering various topics and datasets.
 
-### 📊 Customer Segmentation Analysis
+### Visual Aversive Learning Does Not Compromise Sensory Discrimination
 
-A report identifying distinct customer groups based on purchasing behavior. This analysis uses clustering algorithms in Python.
-
-- **[View Full Analysis](./analyses/customer-report.html)**
+- **[View Full Analysis](./analyses/visualAversiveLearning.html)**
 
 ---
 
-### 📈 Stock Market Trends
+### Plant Awareness Disparity in Numerosity Judgments: Evidence From Comparison and Estimation Tasks
 
-An exploration of historical stock data to identify patterns using time-series analysis in R.
-
-- **[View Full Analysis](./analyses/market-trends.html)**
+- **[View Full Analysis](./analyses/plantAwarenessDisparity.html)**
 
 ---
-
-### 🧪 Project C (Coming Soon)
-
-A placeholder for a future project I plan to add here.
-
-- **(Link will be added here)**
-
