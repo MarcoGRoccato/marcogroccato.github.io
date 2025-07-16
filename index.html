@@ -21,46 +21,31 @@
             border-radius: 10px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
-        h1 {
-            font-size: 2.5em;
-            color: #24292e;
-        }
-        p {
-            font-size: 1.2em;
-            color: #586069;
-        }
     </style>
 </head>
 <body>
-
     <div class="container" id="main-content">
         <h1>🔒 Protected Area</h1>
-        <p>This content is shown after the password check.</p>
+        <p>Please enter the password to proceed.</p>
     </div>
 
     <script>
-      // This script runs as soon as the page loads
-      function checkPassword() {
-        // --- The password to unlock the page ---
-        const correctPassword = "test";
+      function passwordProtect() {
+        const correctPassword = "test"; // Change this password
+        const redirectUrl = "home.html"; // This is the page to redirect to
 
-        // --- Ask the user for the password ---
-        let password = prompt("Please enter the password to continue:", "");
+        let password = prompt("Please enter the password to access the site:", "");
 
-        // --- Check if the entered password is correct ---
         if (password === correctPassword) {
-            // If correct, show a success pop-up message
-            alert("✅ Success! The password is correct.");
+            // If correct, redirect to your main Quarto page
+            window.location.href = redirectUrl;
         } else {
-            // If incorrect, show an "Access Denied" message on the page
+            // If incorrect, show an "Access Denied" message
             const content = document.getElementById('main-content');
             content.innerHTML = '<h1>❌ Access Denied</h1><p>Incorrect password. Please refresh to try again.</p>';
         }
       }
-
-      // Run the function
-      checkPassword();
+      passwordProtect();
     </script>
-
 </body>
 </html>
