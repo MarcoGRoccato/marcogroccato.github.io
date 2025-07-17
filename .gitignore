@@ -1,7 +1,7 @@
 # .gitignore
 
 # 1. Ignore the entire 'data' folder
-# This is the most important rule for your private data.
+# This is the most important rule for private data.
 data/
 
 # 2. For extra safety, ignore these file extensions everywhere in the project.
